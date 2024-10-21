@@ -1,3 +1,3 @@
 # chat-app
 
-bacjkend
+backend - node js
