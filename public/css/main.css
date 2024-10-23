@@ -1,0 +1,32 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+}
+
+li{
+    float: left;  
+    border-right: 1px solid #bbb; 
+    padding-left: 2%;
+    padding: 3%;
+}
+li:last-child{
+    border-right: none;
+}
+
+
+li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 14 px 16 px;
+    text-align: center;
+}
