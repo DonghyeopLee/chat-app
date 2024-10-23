@@ -3,7 +3,7 @@
   "name": "chat-app",
   "version": "1.0.0",
   "description": "backend - node js\r chatting application\r asdasd",
-  "main": "index.js",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
