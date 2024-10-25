@@ -13,7 +13,7 @@
   }
   
   .menu-options {
-    margin-left: auto;
+    margin-left: 50%;
     display: flex;
     gap: 15px;
   }
