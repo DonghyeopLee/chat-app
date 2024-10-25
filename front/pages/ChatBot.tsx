@@ -29,6 +29,7 @@ function ChatBot() {
 
   return (
     <div className="chat-container">
+        <h2>Chat Bot</h2>
       <div className="chat-box">
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.sender}`}>

@@ -1,60 +1,69 @@
-/* App.css */
-.App {
-    text-align: center;
-    padding-top: 60px; /* Adjusts for the fixed menu bar height */
-  }
-  
-  .chat-container {
-    width: 60%; /* Larger width for a bigger chat area */
-    max-width: 700px;
-    margin: 80px auto; /* Centers the chat container with a margin from the top */
+/* ChatBot.css */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    width: 100%;
+    max-width: 600px; /* Set a max width for the chat container */
+    margin: 0 auto; /* Center the container on the page */
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
     background-color: #f9f9f9;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
   .chat-box {
-    max-height: 400px; /* Makes space for the chat */
-    overflow-y: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ffffff;
+    width: 100%;
+    height: 400px; /* Fixed height for chat box */
+    overflow-y: auto; /* Enable scrolling */
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px; /* Space between chat box and input area */
   }
   
   .message {
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 5px;
+    margin: 5px 0; /* Space between messages */
+    padding: 8px;
+    border-radius: 4px;
+    max-width: 80%; /* Ensure messages don't take full width */
+    word-wrap: break-word; /* Break long words to prevent overflow */
   }
   
   .message.user {
-    text-align: right;
-    background-color: #daf1da;
+    background-color: #d4f8d4; /* User messages background */
+    align-self: flex-end; /* Align user messages to the right */
   }
   
   .message.bot {
-    text-align: left;
-    background-color: #e1e1e1;
+    background-color: #e2e2e2; /* Bot messages background */
+    align-self: flex-start; /* Align bot messages to the left */
+  }
+  
+  .input-area {
+    display: flex;
+    width: 100%; /* Take full width */
   }
   
   input {
-    width: calc(100% - 70px);
+    flex: 1; /* Take remaining space */
     padding: 10px;
-    margin-right: 5px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
   }
   
   button {
     padding: 10px;
+    margin-left: 10px; /* Space between input and button */
     border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
+    border-radius: 4px;
+    background-color: #007bff; /* Button color */
     color: white;
     cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darken button on hover */
   }
   

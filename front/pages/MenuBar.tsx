@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MenuBar.css';
 
 const MenuBar: React.FC = () => {
   return (
-    <nav className="menu-bar">
-      <h2>Assignments Assistant</h2>
+    <div className="menu-bar">
+      <h1>My Application</h1>
       <div className="menu-options">
-        <button className="menu-option">Chat bot</button>
-        <button className="menu-option">Question checker</button>
+        <Link to="/chat-app/" className="menu-option">Chat Bot</Link>
+        <Link to="/question-checker" className="menu-option">Question Checker</Link>
       </div>
-    </nav>
+    </div>
   );
-};
+}
 
 export default MenuBar;
