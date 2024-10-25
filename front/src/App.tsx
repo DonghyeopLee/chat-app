@@ -5,13 +5,12 @@ function App() {
 
   return (
     <>
-      <div>
 
+      <div className="App">
+        <MenuBar />
+        <h1>Chatbot demo</h1>
+        <ChatBot />
       </div>
-      <h1>Chatbot demo</h1>
-      <MenuBar />
-      <ChatBot />
-
     </>
   )
 }
