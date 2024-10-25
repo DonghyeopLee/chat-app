@@ -1,14 +1,22 @@
-.chat-container {
-    width: 400px;
-    margin: 0 auto;
+/* App.css */
+.App {
+    text-align: center;
+    padding-top: 60px; /* Adjusts for the fixed menu bar height */
+  }
+  
+  .chat-container {
+    width: 60%; /* Larger width for a bigger chat area */
+    max-width: 700px;
+    margin: 80px auto; /* Centers the chat container with a margin from the top */
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .chat-box {
-    max-height: 300px;
+    max-height: 400px; /* Makes space for the chat */
     overflow-y: auto;
     margin-bottom: 10px;
     padding: 10px;
@@ -18,8 +26,8 @@
   }
   
   .message {
-    padding: 8px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 8px;
     border-radius: 5px;
   }
   
@@ -34,15 +42,15 @@
   }
   
   input {
-    width: calc(100% - 60px);
-    padding: 8px;
+    width: calc(100% - 70px);
+    padding: 10px;
     margin-right: 5px;
     border-radius: 5px;
     border: 1px solid #ddd;
   }
   
   button {
-    padding: 8px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #4CAF50;

@@ -1,5 +1,3 @@
-
-import './App.css'
 import ChatBot from '../pages/ChatBot';
 import MenuBar from '../pages/MenuBar';
 import './App.css';
